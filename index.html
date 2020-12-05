@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>CoresGay</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('button').forEach(function (button) {
+                button.onclick = function () {
+                    document.querySelector("#titulo").style.color = button.dataset.color;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1 id="titulo">Altere o nome gay do Eddy</h1>
+    <button data-color="red">Vermelho</button>
+    <button data-color="pink">Azul</button>
+    <button data-color="blue">Verde</button>
+    <h2>Entre em contato com nosco:</h2>
+    <h3><a href="caralhopintofuncao@gmail.com">caralhopintofuncao@gmail.com</h3>
+    <h3><a href="https://www.google.com/">Google</a></h3>
+</body>
+
+</html>
